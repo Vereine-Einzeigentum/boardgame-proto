@@ -23,8 +23,8 @@ the legacy v1 compatibility adapter.
 - Authority-selected YouTube transmissions that never gate gameplay.
 - A median target of roughly 20–30 minutes.
 
-The full player rules are in [docs/RULES.md](docs/RULES.md). The 10,000-match
-acceptance result is in [docs/BALANCE-REPORT.md](docs/BALANCE-REPORT.md).
+The full player rules are in [.og/RULES.md](.og/RULES.md). The 10,000-match
+acceptance result is in [.og/BALANCE-REPORT.md](.og/BALANCE-REPORT.md).
 
 ## Run locally
 
@@ -80,9 +80,9 @@ The UI is a native board rather than a cinematic shell:
 - text/symbol redundancy and a reduced-motion path.
 
 The visual rules and external-art approval gate are in
-[docs/VISUAL-BIBLE.md](docs/VISUAL-BIBLE.md). Planned Higgsfield batches are
+[.og/VISUAL-BIBLE.md](.og/VISUAL-BIBLE.md). Planned Higgsfield batches are
 recorded in
-[docs/HIGGSFIELD-GENERATION-MANIFEST.json](docs/HIGGSFIELD-GENERATION-MANIFEST.json).
+[.og/HIGGSFIELD-GENERATION-MANIFEST.json](.og/HIGGSFIELD-GENERATION-MANIFEST.json).
 External cinematic frames are optional; the complete game remains playable
 with every generated asset disabled.
 
@@ -111,8 +111,8 @@ The current identifiers are:
 - `rulesVersion: 4`
 - `stateVersion: 4`
 
-See [docs/PROTOCOL.md](docs/PROTOCOL.md) for commands and state contracts, and
-[docs/PRODUCTION-ARCHITECTURE.md](docs/PRODUCTION-ARCHITECTURE.md) for the
+See [.og/PROTOCOL.md](.og/PROTOCOL.md) for commands and state contracts, and
+[.og/PRODUCTION-ARCHITECTURE.md](.og/PRODUCTION-ARCHITECTURE.md) for the
 deployment model.
 
 ## GitHub Pages and authority deployment
@@ -161,7 +161,7 @@ compatibility normalization, adaptive presentation contracts, and production
 build creation.
 
 The deterministic baseline and acceptance artifacts are
-`docs/balance-baseline.json` and `docs/balance-v4.json`. The legacy authority
+`.og/balance-baseline.json` and `.og/balance-v4.json`. The legacy authority
 completed only 0.51% of matches before the simulator's 720-action guard. Rules
 v4 completed all 10,000 matches with zero invalid or soft-lock states, a
 60-cast median, and all six masks inside the intended 13–20% conditional
