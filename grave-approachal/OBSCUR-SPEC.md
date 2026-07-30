@@ -158,7 +158,7 @@ Each draft grants exactly one verb. Which verb depends on the card taken.
 
 **WITNESS** — observe the full board state and declare one true thing about it. No Focus cost. Once per turn, you may instead spend this on another player: place a Chronicle token face-down in their Chronicle space. You can always see. What you do with the seeing is a choice. [M]
 
-**OFFER** — give something to another player. No Focus cost. Items, position effects, small game objects. You can always connect. [M]
+VERB2 - NOT GIFT VERB
 
 *"You can always see. You can always connect."* These are the two free verbs — the floor of personhood that no mask takes away. [M]
 
