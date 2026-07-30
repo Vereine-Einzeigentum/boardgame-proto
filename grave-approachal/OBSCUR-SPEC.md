@@ -56,7 +56,7 @@ Every design claim carries its source. This exists so nobody has to trust the wh
 | G2 | A 3×3 playstyle network, extending Bartle's 2×2. |
 | G3 | Bots get the same verbs as players. |
 | G4 | Masks start with **3 verbs** — 2 universal, invariable, plus 1 mask verb — and end with **6**. Tiers are 0,1,2,3. Tier 0 is the start; tiers 1–3 are drafts granting one verb each. |
-| G5 | Each mask has **2 cards per tier, at minimum**. The third card in an offer is drawn from the deck list. Choose 1 of the 3. Soft cap, not hard diapers. |
+| G5 | Each mask has **2 cards per tier, at minimum**. The third card in an offer is drawn from the deck list. Choose 1 of the 3. Soft cap, not hard caps. |
 | G6 | **Universal card** gives a *boost* and a universal verb. **Mask card** gives a *trade* and a mask verb — meaning it is not the normal tier's verb, not that you gain nothing. |
 | G7 | Cards accumulate. A theme pack adds equally to all masks. |
 | G8 | **Masks are handicaps**, keeping with neurodivergence. |
@@ -120,7 +120,7 @@ Each turn:
 ROLL  →  ⟨ THE BREATH ⟩  →  RESOLVE
 ```
 
-The die rolls **in private, first** — every traveler sees what is about to happen, snart ibes the **Breath** opens: a window in which seated travelers may spend **Focus** to change the outcome. When it closes, the turn resolves. If nobody spent, it resolves as rolled.
+The die rolls **in private, first** — every traveler sees what is about to happen, and then the **Breath** opens: a window in which seated travelers may spend **Focus** to change the outcome. When it closes, the turn resolves. If nobody spent, it resolves as rolled.
 
 **Focus is the spendable resource. The Breath is the window.** [V4 — *Focus* is v4's name for the ±1 Bend resource.]
 
@@ -132,7 +132,7 @@ What the Breath buys:
 - **F8.** Spectators watch the die decide; seated travelers can argue with it. Visible in ten seconds without reading a rule.
 - **F2, literally.** The game happens *to* you. Your power is when you push back.
 
-**The final result must both stay visible.** [V4 — v4 shipped this distinction.] Without it the Breath has no theatre.
+**The final result must stay visible.** [V4 — v4 shipped this distinction.] Without it the Breath has no theatre.
 
 ---
 
@@ -166,7 +166,7 @@ VERB2 - NOT GIFT VERB
 | **Universal card** | a minor **boost** | the tier's universal verb(s) |
 | **Mask card** | a distinct **trade** | the mask's substitute for that tier, *double edged sword* — *not* the universal tier verb(s) |
 
-The all-mask path doesn't lose because mask verbs are weak — it loses because specialized lies have steep costw. By Tier 3 you're highly specialized and increasingly in the strategic debt G9 refers to, and it carries no shame: some coping strategies genuinely work better in isolation, at a cost.
+The all-mask path doesn't lose because mask verbs are weak — it loses because specialized lines have steep costs. By Tier 3 you're highly specialized and increasingly in the strategic debt G9 refers to, and it carries no shame: some coping strategies genuinely work better in isolation, at a cost.
 
 ### Tier universal verbs (acquired through draft)
 
@@ -191,7 +191,7 @@ tier 1:   A universal   B mask        C mask         choose 1
 tier 2:   A mask        B universal   C mask         choose 1
 tier 3:   A mask        B mask        C universal    choose 1
 ```
-*_the above is an example*_
+_the above is an example_
 
 **[M]** Position of the universal card(s) shuffles, so no slot is learnable as "the road's."
 
@@ -275,7 +275,7 @@ Bartle's grid is 2×2 and has no vocabulary for a game that moves without you. *
 | **INTERACTING** | Cartographer | Archivist | Companion |
 
 **[M]** Proposed mapping: Thorn→Pilgrim, Ember→Gambler, Veil→Survivor, Moss→Guardian, Moon→Cartographer, Ash→Archivist.
-### [Graves: For primary builds yes, but the offhand buildshould be a permutation]
+### [Graves: For primary builds yes, but the offhand build should be a permutation]
 
 **[M] Hunter, Opportunist and Companion have no starting mask.** They are reachable only by drafting toward them. Nobody can start as a griefer; antisocial behavior is a chosen reaction born from your own mask, made in front of the table.
 
@@ -411,9 +411,9 @@ The audit list. Nothing here came from Foxy or graves.
 Items where the brainstorm reached a proposal are marked [M-proposed]. Items with nothing behind them are blank.
 
 - **Bot recommendation body.** The mask's recommendation must be printable — a conditional on a card ("if the event would move you back, REROUTE"). Language unwritten. [M-proposed: one conditional per mask verb, plain enough to read once and internalize]
-- **Mask assignment vs. choice.** Which is the default first-play experience, which is the variant? [M-proposed: choice is more authentic to the masking theme; assignment is simpler as a tutorial mode — decide which is default] [GRAVE CHOICE: at game start, players roll the first d6, and go in ascending order. the only time a 1 is truly better thaj a 6]
+- **Mask assignment vs. choice.** Which is the default first-play experience, which is the variant? [M-proposed: choice is more authentic to the masking theme; assignment is simpler as a tutorial mode — decide which is default] [GRAVE CHOICE: at game start, players roll the first d6, and go in ascending order. the only time a 1 is truly better than a 6]
 - **Road branch structure.** Linear is assumed. Branch positions unconfirmed. [M-proposed: strictly linear; REROUTE operates on event-choice, not path-choice] [G: Deferred to modules; basegame linear, only 2 maps. If a player wins with all 6 masks, give them a free "backrooms" procedural map pack with 1 additional universal card per tier]
-- **Trade cost specifics.** What the card also charges is for later; the card library is not scooed. []
+- **Trade cost specifics.** What the card also charges is for later; the card library is not scoped. []
 - **Focus amount and recovery.** One unit per turn? Two? Does it recover mid-turn or only at turn-start? []
 - **The 36+ mask cards and their specific trades.** []
 - **Seat count.** Six is unconfirmed. [V4] [6 confirmed for scope]
