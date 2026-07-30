@@ -1,6 +1,6 @@
 # Obscur — The Sixfold Road
 
-## Gameplay Design Specification — v5
+## Gameplay Design Specification — v0.5.5
 
 **Date:** 2026-07-29
 **Team:** graves, Foxy, dreamer
@@ -20,13 +20,13 @@ Every design claim carries its source. This exists so nobody has to trust the wh
 | **[V4]** | Inherited from dreamer's rules-v4. |
 | **[M]** | Mine. **Unverified.** Argue with it or cut it. |
 
-**If you are short on time, read only the [M] lines.** Everything else is a record of what you already decided. §11 lists every [M] claim in one place.
+**If you are short on time, read only the [G] lines.** Everything else is a record of what you already decided. §11 lists every [M] claim in one place.
 
 ---
 
 ## 1. Source
 
-### Foxy — #business-talk, 2026-07-27
+### Foxy — discord, 2026-07-27
 
 | # | Verbatim |
 |---|---|
@@ -52,29 +52,24 @@ Every design claim carries its source. This exists so nobody has to trust the wh
 
 | # | Decision |
 |---|---|
-| G1 | Keep the fiction, scrap the mechanics. |
+| G1 | Keep the fiction, rework mechanics. |
 | G2 | A 3×3 playstyle network, extending Bartle's 2×2. |
 | G3 | Bots get the same verbs as players. |
-| G4 | Players start with **3 verbs** — 2 universal, invariable, plus 1 mask verb — and end with **6**. Tiers are 0,1,2,3. Tier 0 is the start; tiers 1–3 are drafts granting one verb each. |
-| G5 | Each mask has **2 cards per tier, at minimum**. The third card in an offer is drawn from the universal list. Choose 1 of the 3. |
-| G6 | **Universal card** gives a *boost* and a universal verb. **Mask card** gives a *trade* and a mask-swapped verb — "swapped" meaning it is not the normal tier's verb, not that you gain nothing. |
+| G4 | Masks start with **3 verbs** — 2 universal, invariable, plus 1 mask verb — and end with **6**. Tiers are 0,1,2,3. Tier 0 is the start; tiers 1–3 are drafts granting one verb each. |
+| G5 | Each mask has **2 cards per tier, at minimum**. The third card in an offer is drawn from the deck list. Choose 1 of the 3. Soft cap, not hard diapers. |
+| G6 | **Universal card** gives a *boost* and a universal verb. **Mask card** gives a *trade* and a mask verb — meaning it is not the normal tier's verb, not that you gain nothing. |
 | G7 | Cards accumulate. A theme pack adds equally to all masks. |
 | G8 | **Masks are handicaps**, keeping with neurodivergence. |
 | G9 | Masking 100% is not a good line. |
 | G10 | Packs are sometimes code. Cards are sometimes code. |
 | G11 | Monetization must not be cosmetic-only. It must include **"better chance of a thing"** and some gacha and loot-box technique. |
 | G12 | Contributors retain personal ownership unless signatory to a collaborative release agreement. |
-| G13 | **The vereign strategy:** each contributor needs a way to **personally monetize their own contribution**, independent of the other two. |
+| G13 | **The verein strategy:** each contributor needs a way to **personally monetize their own contribution**, independent of the other two. |
 | G14 | "playing worse than the bots is why you learn to play a game" |
 
 ### Team
 
-**Three people: graves, Foxy, dreamer.** Not three additional hires. [G]
-
-### Unconfirmed
-
-- **Seat count.** Six is carried from the v4 product identity. Nobody has stated it for v5. [V4, unconfirmed]
-- **Road branch structure.** The Road is linear event-card-driven movement. Whether positions branch is unconfirmed. [M]
+**Three people: graves, Foxy, dreamer.** Not three additional hires. [G] 
 
 ---
 
@@ -86,12 +81,12 @@ Not metaphorically — literally. A masked figure is moving down a road that doe
 
 The six masks are coping strategies. [M] Not bundles of power — shapes you learned to wear to get down a road that wasn't built for you. Every mask verb is something that costs you. Every mask card is a trade. The handicap is not the mask; the handicap is the exchange rate, and you chose it.
 
-**F1 and F8 pull against each other:**
+**F1 and F8 used to pull against each other:**
 
 > F1: the game plays itself with zero input.
 > F8: there must be a reason to sit down and beat the bots.
 
-**[M] The resolution:** the player's verb is not *move* — the die moves you. The player's verb is *interrupt*. The road proposes. You may argue with it. If you don't, the proposal stands and the bot plays your recommendation.
+**[M] The resolution:** the player's verb is not *move* — the die moves you. The player's invariant proto-verb is *interrupt*. The road proposes. You may argue with it. If you don't, the proposal stands and the bot plays its recommendation.
 
 That is the reason to sit down. The bot is playing your mask right now, with your verbs, making your mask's choices. Whether you agree with it is the whole game.
 
@@ -104,10 +99,12 @@ a die
 a start condition
 an end condition
 a position per traveler
-event cards — move forward x, move back x, items affecting other players [F9]
+event cards
+mask cards
+other players [F9]
 ```
 
-Turn: roll, advance, resolve event, check end. Repeat. The road is a state, not a rendered board [F2]. All seats bot-fillable [F1].
+Turn: roll or hold, advance exactly as rolled, resolve tile event, resolve board (if any modules) event, check end. Repeat. The road is a state, not a rendered board [F2]. All seats bot-fillable [F1].
 
 **[M] Layer 0 is a complete, self-playing game.** It is boring; that is correct. Every layer above must justify itself against it and must be removable back down to it.
 
@@ -123,7 +120,7 @@ Each turn:
 ROLL  →  ⟨ THE BREATH ⟩  →  RESOLVE
 ```
 
-The die rolls **in public, first** — every traveler sees what is about to happen. Then the **Breath** opens: a window in which seated travelers may spend **Focus** to change the outcome. When it closes, the turn resolves. If nobody spent, it resolves as rolled.
+The die rolls **in private, first** — every traveler sees what is about to happen, snart ibes the **Breath** opens: a window in which seated travelers may spend **Focus** to change the outcome. When it closes, the turn resolves. If nobody spent, it resolves as rolled.
 
 **Focus is the spendable resource. The Breath is the window.** [V4 — *Focus* is v4's name for the ±1 Bend resource.]
 
@@ -135,13 +132,13 @@ What the Breath buys:
 - **F8.** Spectators watch the die decide; seated travelers can argue with it. Visible in ten seconds without reading a rule.
 - **F2, literally.** The game happens *to* you. Your power is when you push back.
 
-**The natural roll and the final result must both stay visible.** [V4 — v4 shipped this distinction.] Without it the Breath has no theatre.
+**The final result must both stay visible.** [V4 — v4 shipped this distinction.] Without it the Breath has no theatre.
 
 ---
 
 ## 5. Verbs
 
-**Counts are [G4]. Card kinds are [G5], [G6]. Everything else is [M].**
+**Counts are [G4]. Card types are [G5], [G6]. Everything else is [M].**
 
 ### Counts
 
@@ -166,20 +163,20 @@ VERB2 - NOT GIFT VERB
 
 | | Effect | Verb granted |
 |---|---|---|
-| **Universal card** | a **boost** | the tier's universal verb |
-| **Mask card** | a **trade** | the mask's substitute for that tier — *not* the normal tier verb |
+| **Universal card** | a minor **boost** | the tier's universal verb(s) |
+| **Mask card** | a distinct **trade** | the mask's substitute for that tier, *double edged sword* — *not* the universal tier verb(s) |
 
-**[M] What "trade" costs:** taking a mask card swaps one universal verb out of your active hand in exchange for the mask-swapped verb. The all-mask path doesn't lose because mask verbs are weak — it loses because your universal toolkit erodes with each trade. By Tier 3 you're highly specialized and increasingly unable to cooperate. That is the strategic debt G9 refers to, and it carries no shame: some coping strategies genuinely work better in isolation, at a cost.
+The all-mask path doesn't lose because mask verbs are weak — it loses because specialized lies have steep costw. By Tier 3 you're highly specialized and increasingly in the strategic debt G9 refers to, and it carries no shame: some coping strategies genuinely work better in isolation, at a cost.
 
 ### Tier universal verbs (acquired through draft)
 
 | Tier | Verb | What it does |
 |---|---|---|
 | 1 | **BEND** | Spend Focus to shift the die result ±1. The direct interrupt. [M] |
-| 2 | **GIFT** | Transfer your unspent Focus to another player this turn. [M] |
-| 3 | **CALL** | The table agrees which single player may act during the Breath window this turn. Everyone else watches. [M] |
+| 2 | **TBD** |  |
+| 3 |  |  |
 
-**[M] Arc:** BEND teaches you to interrupt. GIFT teaches you to give. CALL teaches you to call others to account. Individual interference → individual cooperation → collective deliberation. That is the universal growth arc.
+**[M] Arc:** BEND teaches you to interrupt. Individual interference → individual cooperation → collective deliberation.
 
 ---
 
@@ -187,19 +184,20 @@ VERB2 - NOT GIFT VERB
 
 Three drafts per run, at tiers 1, 2 and 3. [G4]
 
-Each offers **three cards — 2 mask, 1 universal. Choose 1.** [G5]
+Each offers **three cards — in the MVP this is 2 mask, 1 universal. Choose 1.** [G5]
 
 ```
 tier 1:   A universal   B mask        C mask         choose 1
 tier 2:   A mask        B universal   C mask         choose 1
 tier 3:   A mask        B mask        C universal    choose 1
 ```
+*_the above is an example*_
 
-**[M]** Position of the universal card shuffles, so no slot is learnable as "the road's."
+**[M]** Position of the universal card(s) shuffles, so no slot is learnable as "the road's."
 
 **[M]** The mask shows its recommendation before you choose. If you don't choose, the mask takes its recommendation. This is the F1 guarantee at the draft layer and the pedagogy: watch what your mask would have picked, then decide whether you agree.
 
-**[M] Tier gating by road progress, not round number.** Reaching certain positions on the road unlocks the next tier. Moving forward earns growth. Waiting doesn't. That makes advancement a real choice with a real pressure.
+**[M] Tier gating by road progress and event cards, not round number.** Reaching certain positions on the road unlocks the next tier. Moving forward earns growth. Waiting doesn't. That makes advancement a real choice with a real pressure.
 
 ---
 
@@ -211,15 +209,13 @@ tier 3:   A mask        B mask        C universal    choose 1
 pool(mask, tier) = 2 core + k × (enabled theme packs)
 ```
 
-**A theme pack adds the same number of mask cards to every one of the six masks.** [G7]
+**A theme pack adds the same number of mask cards to every one of the six masks, or it adds none at all.** [G7] 
 
-The offer stays 2 mask + 1 universal regardless of pool size. You learn a mask's *pool*, not its exact pair.
-
-**[M]** Enforce the equal-per-mask rule in the pack schema. A rule in the file format survives a deadline; a rule in a document does not.
+**[M]** Enforce the equal-counts-per-mask rule in the pack schema. A rule in the file format survives a deadline; a rule in a document does not.
 
 ### Cards are sometimes code [G10]
 
-A five-operation data grammar covers the common case, but cannot express F4's "complex mechanics" or F16's "any person can insert game rules," and a data-only format puts every new mechanic behind an engine release.
+A five-operation data grammar covers the common case, but cannot express F4's "complex mechanics" or F16's "any person can insert game rules," and a data-only format puts every new mechanic behind an engine release. [g: lets fix that]
 
 **[M] Tiered trust:**
 
@@ -230,9 +226,6 @@ A five-operation data grammar covers the common case, but cannot express F4's "c
 | T2 | community | sandboxed, must clear validator + simulator |
 | T3 | unsigned / local | sandboxed, off by default |
 
-**[M]** The sandbox must be deterministic — same seed, same match. No wall clock, no unseeded randomness, no I/O, no network, no storage. Fuel-metered so a card cannot hang the table. Working pick: QuickJS compiled to WebAssembly with globals stripped.
-
-**[M]** For an 8–12 audience, user-authored text and art rendering to children is the sharper risk, and it exists whether or not a card carries script.
 
 ---
 
@@ -240,13 +233,15 @@ A five-operation data grammar covers the common case, but cannot express F4's "c
 
 **Masks are handicaps, keeping with neurodivergence.** [G8]
 
-Not bundles of power — coping strategies you wear to get down the road. Each mask verb is the path of least resistance: gravitational, not mandatory. [M] It pulls. You can navigate with it or against it. The cost is the exchange rate, not the verb itself. Sometimes least resistance is correct. Sometimes resisting it is the skill. The Chronicle watches both.
+Not bundles of power — coping strategies you wear to get down the road. Each mask verb is the path of least resistance: gravitational, not mandatory. [M] It pulls. You can navigate with it or against it. The cost is an exchange rate, as part of the verb itself. Sometimes least resistance is correct. Sometimes resisting it is the skill. The Chronicle watches both.
 
-**The mask plays you when you stop playing it.** [M] Same verb, same policy, bot in the seat. The failure state is not losing — it's **illegible defeat**. Because the mask pre-registers its recommendation and you consciously override it, every loss arrives with its counterfactual already visible.
+**The mask plays you when you stop playing it.** [M] Same verbs, same policy, bot in the seat. The failure state is not losing — it's **illegible defeat**. Because the mask pre-registers its recommendation and you consciously override it, every loss arrives with its counterfactual already visible.
 
-The six, from v4, kept by name and character: **Thorn, Ember, Veil, Moss, Moon, Ash.** [V4, G1]
+The six, from v4, kept by name and character: **Thorn, Ember, Veil, Moss, Moon, Ash.** [V4, G1] (subject to reassertion)
 
 ### Starting verbs [M]
+
+[GRAVES: "hey kid i like the ideas buy game design takes a bit more than this so be salient"]
 
 | Mask | Verb | What it does | What it costs |
 |---|---|---|---|
@@ -256,12 +251,11 @@ The six, from v4, kept by name and character: **Thorn, Ember, Veil, Moss, Moon, 
 | Moss | **CARRY** | Before another player takes harm, declare you will take it instead. | You take the hit. |
 | Moon | **SURVEY** | Before the die rolls, reveal the top event card to the table. | You spent your turn on information, not action. The information is public — bots and other players adapt. |
 | Ash | **DECLARE** | Before the Breath opens, publicly name what will happen this turn. If accurate: +1 on the next roll. | The declaration is public. If wrong, the table witnessed it. |
-
-**[M] Masks are symmetric in cost, not capability.** Every mask verb is free to draft at every table regardless of ownership.
+[G: like these arent great]
 
 ### The psychological read [M]
 
-Each verb is the same assertion: *I can argue with what's coming.* Thorn refuses the determined event. Ember outpaces the road. Veil refuses the determined harm. Moss refuses the harm landing on someone else. Moon refuses to go in blind. Ash refuses to be surprised.
+~~Each verb is the same assertion: *I can argue with what's coming.* Thorn refuses the determined event. Ember outpaces the road. Veil refuses the determined harm. Moss refuses the harm landing on someone else. Moon refuses to go in blind. Ash refuses to be surprised.~~
 
 The mask is the shape of that refusal. The cost is what refusing requires.
 
@@ -281,14 +275,11 @@ Bartle's grid is 2×2 and has no vocabulary for a game that moves without you. *
 | **INTERACTING** | Cartographer | Archivist | Companion |
 
 **[M]** Proposed mapping: Thorn→Pilgrim, Ember→Gambler, Veil→Survivor, Moss→Guardian, Moon→Cartographer, Ash→Archivist.
+### [Graves: For primary builds yes, but the offhand buildshould be a permutation]
 
-**[M] Hunter, Opportunist and Companion have no starting mask.** They are reachable only by drafting toward them. Nobody can start as a griefer; hostility is a visible deviation from your own mask, made in front of the table.
+**[M] Hunter, Opportunist and Companion have no starting mask.** They are reachable only by drafting toward them. Nobody can start as a griefer; antisocial behavior is a chosen reaction born from your own mask, made in front of the table.
 
-**[M] The three drift cells are the game's secret.** Aggression is learned, not given. Vulnerability is a skill, not a starting position. Opportunism is what you become when the road keeps surprising you. Nobody hands you those cells. You find them.
-
-**[M] Drift cells don't give you new verbs — they give your existing verbs a different gravity.** CARRY operating as Guardian means absorbing cost. CARRY operating as the Companion drift means CARRY channels Focus to another seat rather than harm. The verb is the same gesture. The orientation changes what flows through it.
-
-**[M] Live constraint from Bartle (1996):** *"Increasing the number of killers will decrease the number of socialisers by a much greater degree."* With an 8–12 audience, an unchecked Hunter cell is a product-death problem, not a balance problem.
+**[M] Live constraint from Bartle (1996):** *"Increasing the number of killers will decrease the number of socialisers by a much greater degree."*
 
 ---
 
@@ -304,11 +295,9 @@ The Chronicle records the run. It is the divergence log, the print artifact, and
 
 **[M] Other players are your Chronicle keepers.** When a player WITNESSes a moment where another traveler's mask verb was available and they didn't take it, they may spend their WITNESS for the turn to place a Chronicle token face-down in that traveler's Chronicle space. Silent. No announcement.
 
-**Ember is the exception.** [M] Ember's Chronicle tokens are placed by players who chose to HOLD STILL during a turn when Static was high and Ember could have SURGEd. The keeper is the person who absorbed the cost of Ember's possible surge, not the person watching Ember's restraint.
+At Housewin, each traveler flips their Chronicle tokens before the question is read. The count is visible. Then the question is read. **The question is the meaning. The count is the proof.**
 
-At House-fall, each traveler flips their Chronicle tokens before the question is read. The count is visible. Then the question is read. **The question is the meaning. The count is the proof.**
-
-### The six Chronicle questions [M]
+### The six Chronicle [STRICTLY EXAMPLES NEED CALIBRATING FOR SHIPPED VERSION] questions [M]
 
 | Mask | Question |
 |---|---|
@@ -323,11 +312,11 @@ At House-fall, each traveler flips their Chronicle tokens before the question is
 
 ### The win condition [M]
 
-The House falls at 3 Fractures. The run ends. There is no single winner.
+The House wins at 3 Fractures. The run ends. There is no single winner.
 
-Each traveler reads their Chronicle question. Each mask scores its own tokens. The Chronicle is the artifact — the record of what the run became and how much of it was you arguing with the Road versus the Road taking you.
+Each traveler reads their Chronicle question. Each mask scores its own tokens. The Chronicle is the artifact — the record of what the run became and how much of it was you arguing with the Road versus the Road taking you. The winner is decided by **who was on the exit tile at game end, tie broken by token count, and tie broken by cooperation record.**
 
-**[M]** This is not a neutral design. For 8–12, a question asked in front of your friends at run-end that the game answered from watching you play — that is the memorable moment. Not a leaderboard. A reckoning.
+**[M]** This is not a neutral design. The question asked in front of your friends at run-end is the one that the game answered from watching you play — that is the memorable moment. Not a leaderboard. A reckoning.
 
 ---
 
@@ -338,12 +327,6 @@ Each traveler reads their Chronicle question. Each mask scores its own tokens. T
 v4 already worked this way — *"Bots use the same command paths"* [V4] — so this is a property to preserve and enforce, not to introduce.
 
 **[M]** Enforce with a signature that cannot reach private state:
-
-```ts
-type Policy = (s: PublicSnapshot, seat: SeatId) => Command
-```
-
-Bot cheating becomes unrepresentable rather than prohibited.
 
 **[M]** What follows if enforced:
 
@@ -427,15 +410,11 @@ The audit list. Nothing here came from Foxy or graves.
 
 Items where the brainstorm reached a proposal are marked [M-proposed]. Items with nothing behind them are blank.
 
-- **Bot recommendation body.** The mask's recommendation must be printable — a conditional on a card ("if the event would move you back, REROUTE"). Language unwritten. [M-proposed: one conditional per mask verb, plain enough for 8-12 to read once and internalize]
-- **Mask assignment vs. choice.** Which is the default first-play experience, which is the variant? [M-proposed: choice is more authentic to the masking theme; assignment is simpler as a tutorial mode — decide which is default]
-- **Road branch structure.** Linear is assumed. Branch positions unconfirmed. [M-proposed: strictly linear; REROUTE operates on event-choice, not path-choice]
-- **Trade cost specifics beyond verb-swap.** What the card also charges (Static, position, Focus) is per-card. The general principle is stated; the card library is not. []
+- **Bot recommendation body.** The mask's recommendation must be printable — a conditional on a card ("if the event would move you back, REROUTE"). Language unwritten. [M-proposed: one conditional per mask verb, plain enough to read once and internalize]
+- **Mask assignment vs. choice.** Which is the default first-play experience, which is the variant? [M-proposed: choice is more authentic to the masking theme; assignment is simpler as a tutorial mode — decide which is default] [GRAVE CHOICE: at game start, players roll the first d6, and go in ascending order. the only time a 1 is truly better thaj a 6]
+- **Road branch structure.** Linear is assumed. Branch positions unconfirmed. [M-proposed: strictly linear; REROUTE operates on event-choice, not path-choice] [G: Deferred to modules; basegame linear, only 2 maps. If a player wins with all 6 masks, give them a free "backrooms" procedural map pack with 1 additional universal card per tier]
+- **Trade cost specifics.** What the card also charges is for later; the card library is not scooed. []
 - **Focus amount and recovery.** One unit per turn? Two? Does it recover mid-turn or only at turn-start? []
 - **The 36+ mask cards and their specific trades.** []
-- **Seat count.** Six is unconfirmed. [V4]
+- **Seat count.** Six is unconfirmed. [V4] [6 confirmed for scope]
 - **Draft tier gating specifics.** Road positions that gate tiers not yet specified. [M-proposed: road progress, not round number]
-- **graves' ethical whale hooks.** G11's compliant shape lives in `OBSCUR-REVENUE.md`. The hooks themselves are graves'. []
-- **Personal monetization mechanism.** G13. Legal half exists in `COLLABORATIVE-RELEASE-AGREEMENT.md` (retained ownership, non-exclusive grant). The rails do not. []
-- **Brand ownership.** Trademark doesn't decompose into modules and the release agreement doesn't touch it. Whoever holds *Obscur* and the *Foxyverse* holds a veto over the other two's ability to sell into that world. Foxy's to answer. []
-- **CALL's edge cases.** What happens if the table can't reach consensus? Timeout → no Focus spent this turn? []
