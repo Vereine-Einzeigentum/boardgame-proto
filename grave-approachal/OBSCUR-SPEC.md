@@ -6,6 +6,7 @@
 **Team:** graves, Foxy, dreamer
 **Supersedes:** rules-v4 mechanics. The v4 *world* is kept.
 **Blocked:** no code against the v4 tree until the licence is granted — `OBSCUR-LICENSING.md`
+**Authority:** where this spec conflicts with `OBSCUR-DECISIONS.md`, the decisions doc wins. Session contradictions have been pruned from the `[M]` claims below — single winner, trade = bonus + passive penalty, no BEND/GIFT/CALL ladder, gift verb retracted, information private by default, Chronicle is a brag-log for now.
 
 ---
 
@@ -253,6 +254,8 @@ The six, from v4, kept by name and character: **Thorn, Ember, Veil, Moss, Moon, 
 | Ash | **DECLARE** | Before the Breath opens, publicly name what will happen this turn. If accurate: +1 on the next roll. | The declaration is public. If wrong, the table witnessed it. |
 [G: like these arent great]
 
+**[SUPERSEDED]** These starting verbs and their public-information costs are being rebuilt in the card library per `OBSCUR-DECISIONS.md`. Per the locked visibility principle, players do **not** default to seeing each other's state, so information powers (SURVEY, DECLARE) are **private by default** — nothing reveals to the table unless a specific card says so.
+
 ### The psychological read [M]
 
 ~~Each verb is the same assertion: *I can argue with what's coming.* Thorn refuses the determined event. Ember outpaces the road. Veil refuses the determined harm. Moss refuses the harm landing on someone else. Moon refuses to go in blind. Ash refuses to be surprised.~~
@@ -312,11 +315,11 @@ At Housewin, each traveler flips their Chronicle tokens before the question is r
 
 ### The win condition [M]
 
-The House wins at 3 Fractures. The run ends. There is no single winner.
+The House wins at 3 Fractures. The run ends. **There is exactly one winner** — and nobody winning means everyone loses to the House (see `OBSCUR-DECISIONS.md`).
 
-Each traveler reads their Chronicle question. Each mask scores its own tokens. The Chronicle is the artifact — the record of what the run became and how much of it was you arguing with the Road versus the Road taking you. The winner is decided by **who was on the exit tile at game end, tie broken by token count, and tie broken by cooperation record.**
+The winner is decided by **who was on the exit tile at game end, tie broken by token count, and tie broken by cooperation record.** The six mask questions survive as the **per-mask brag-log** headers; the deeper mask-relative Chronicle scoring is parked.
 
-**[M]** This is not a neutral design. The question asked in front of your friends at run-end is the one that the game answered from watching you play — that is the memorable moment. Not a leaderboard. A reckoning.
+**[M]** This is not a neutral design. The question asked in front of your friends at run-end is the one that the game answered from watching you play — that is the memorable moment. **[PRUNED]** ~~Not a leaderboard. A reckoning.~~ — reversed: points attach to profiles and **do** feed leaderboards (per map, per mask, overall); the brag-log rides alongside them.
 
 ---
 
@@ -367,12 +370,12 @@ The audit list. Nothing here came from Foxy or graves.
 6. Focus resets each turn; turns are the scarcity, not Focus — §4
 7. Two competing demands on Focus: mask gravity vs. Road interruption — §4
 8. WITNESS as universal starting verb (see freely, record once per turn) — §5
-9. OFFER as universal starting verb (give something, free) — §5
+9. ~~OFFER as universal starting verb (give something, free)~~ — **RETRACTED**: VERB2 is not a gift verb
 10. "You can always see. You can always connect." as the floor of personhood — §5
-11. Trade = swap one universal verb out of active hand — §5
-12. BEND (T1), GIFT (T2), CALL (T3) as tier universal verbs — §5
-13. CALL's object: consensus which single player acts during Breath — §5
-14. The arc: BEND → GIFT → CALL as individual interrupt → individual cooperation → collective deliberation — §5
+11. ~~Trade = swap one universal verb out of active hand~~ — **RETRACTED**: trade = a bonus (activated or passive) + a passive penalty; it never touched universal verbs
+12. ~~BEND (T1), GIFT (T2), CALL (T3) as tier universal verbs~~ — **RETRACTED**: no ladder; BEND stays T1, T2/T3 open
+13. ~~CALL's object: consensus which single player acts during Breath~~ — **RETRACTED** with CALL
+14. ~~The arc: BEND → GIFT → CALL~~ — **RETRACTED** with the ladder
 15. Universal card position shuffles in the offer — §6
 16. Mask recommendation shown before choosing; taken automatically if you don't — §6
 17. Tier gating by road progress, not round number — §6
@@ -392,14 +395,14 @@ The audit list. Nothing here came from Foxy or graves.
 31. The mask-to-cell mapping — §9
 32. Hunter, Opportunist, Companion as drift-only — §9
 33. Drift cells change verb gravity, not verb access — §9
-34. Companion drift: OFFER operates at Focus-transfer depth — §9
+34. ~~Companion drift: OFFER operates at Focus-transfer depth~~ — **RETRACTED** with the gift verb
 35. Bartle population constraint as a live design input — §9
-36. Chronicle keeper mechanism: other players WITNESS your near-misses — §10
-37. Ember's Chronicle tokens placed by players who held still — §10
-38. Token count as legible climax; Chronicle question as meaning — §10
-39. Six Chronicle questions (verbatim) — §10
-40. No single winner; mask-relative Chronicle scoring — §10
-41. The Chronicle as reckoning, not leaderboard — §10
+36. ~~Chronicle keeper mechanism: other players WITNESS your near-misses~~ — **PARKED**: WITNESS is a brag-log for now
+37. ~~Ember's Chronicle tokens placed by players who held still~~ — **PARKED** with the keeper mechanism
+38. Token count as legible climax — kept — §10
+39. Six Chronicle questions (verbatim) — now the **per-mask brag-log headers** — §10
+40. ~~No single winner; mask-relative Chronicle scoring~~ — **RETRACTED**: exactly one winner (exit tile, then token count, then cooperation)
+41. ~~The Chronicle as reckoning, not leaderboard~~ — **RETRACTED**: points feed profiles and leaderboards
 42. Every consequence listed under bots-same-verbs — §11
 43. The `PublicSnapshot` policy signature — §11
 44. First 60 seconds beat sequence — §11
