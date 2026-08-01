@@ -34,9 +34,10 @@ Claude's interpretation, needs confirming.
   default.** **[R]**
 - **Bonus info is useless if everyone gets it** → see-ahead / information powers reveal
   **to the owner only**, never to the table. **[R]**
-- **"The board getting to see your XYs" is the weird thing to kill** — a player's build /
-  archetype position (the 3×3 network coordinates) is **private state, not a public
-  readout.** **[R]** *(that "XYs" = 3×3 grid position is [read] — confirm.)*
+- **Players do not default to seeing your X / Y / Z.** None of your state — resources,
+  cards, build, information, any of it — is visible to other players by default.
+  Visibility is a rare exception a specific card grants, never the norm. This is the
+  single visibility principle the three bullets in this section all express. **[R]**
 
 ## 3. Game shape — Jumanji
 
